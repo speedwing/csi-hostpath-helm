@@ -27,7 +27,7 @@ spec:
       serviceAccount: csi-snapshotter
       containers:
         - name: csi-snapshotter
-          image: "{{ .Values.csiHostpathSnapshotter.image.repository }}:{{ .Values.csiHostpathResizer.image.tag }}"
+          image: "{{ .Values.csiHostpathSnapshotter.image.repository }}:{{ .Values.csiHostpathSnapshotter.image.tag }}"
           imagePullPolicy: {{ .Values.csiHostpathSnapshotter.image.pullPolicy }}
           args:
             - -v=5

@@ -4,7 +4,6 @@ csiHostpathAttacher:
     pullPolicy: IfNotPresent
     tag: "v3.0.0"
 
-
 csiNodeDriverRegistrar:
   image:
     repository: k8s.gcr.io/sig-storage/csi-node-driver-registrar
