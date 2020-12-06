@@ -32,7 +32,7 @@ spec:
           args:
             - -v=5
             - --csi-address=/csi/csi.sock
-            - --feature-gates=Topology=false
+            - --feature-gates=Topology={{ .Values.csiHostpathProvisioner.topologyEnabled }}
           securityContext:
             # This is necessary only for systems with SELinux, where
             # non-privileged sidecar containers cannot access unix domain socket

@@ -125,7 +125,7 @@ spec:
             type: DirectoryOrCreate
           name: mountpoint-dir
         - hostPath:
-            path: /var/snap/microk8s/common/var/lib/kubelet/plugins_registry # TODO: parameterize (customize by build, microk8s vs other)
+            path: {{ .Values.csiHostpathPlugin.pluginRegistrationDir | default "/var/lib/kubelet/plugins_registry" }}
             type: Directory
           name: registration-dir
         - hostPath:
