@@ -3,6 +3,20 @@ entries:
   csi-hostpath:
   - apiVersion: v2
     appVersion: v1.4.0
+    created: "2020-12-06T14:21:44.180271254Z"
+    description: All that you need to run a CSIDriver on hostpath for your kubernetes cluster
+    digest: 3672d0c702eab542bdf0235f78fcc027fa0bd9262db8371a45f69d054f1d84d2
+    home: https://github.com/speedwing/csi-hostpath-helm
+    maintainers:
+    - email: gargiulo.gianni@gmail.com
+      name: Giovanni Gargiulo
+      url: https://nemo83.dev/
+    name: csi-hostpath
+    urls:
+    - https://github.com/speedwing/csi-hostpath-helm/releases/download/csi-hostpath-0.0.4/csi-hostpath-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: v1.4.0
     created: "2020-12-05T15:59:49.00818736Z"
     description: All that you need to run a CSIDriver on hostpath for your kubernetes cluster
     digest: bb3d6c2af9df9bbe20542d2d614b1a78e5486c25b8204f33a5af2ac561d2287b
