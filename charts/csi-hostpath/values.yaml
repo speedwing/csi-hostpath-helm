@@ -34,3 +34,9 @@ csiHostpathSnapshotter:
     repository: k8s.gcr.io/sig-storage/csi-snapshotter
     pullPolicy: IfNotPresent
     tag: "v3.0.0"
+
+snapshotController:
+  image:
+    repository: k8s.gcr.io/sig-storage/snapshot-controller
+    pullPolicy: IfNotPresent
+    tag: "v3.0.0"
